@@ -1,0 +1,46 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 200;
+}
+
+#wrapper {
+  background-color: #f7f1e3;
+  min-height: 100vh;
+
+  #header-wrapper {
+    height: 60px;
+    background-color: #2c2c54;
+  }
+
+  #content-wrapper {
+    padding: 60px 0;
+  }
+
+  .container  {
+    width: 1170px;
+    max-width: 100%;
+
+    margin: 0 auto;
+  }
+
+  .title-bar {
+    display: flex;
+    justify-content: space-between;
+
+    .action {
+      cursor: pointer;
+    }
+  }
+
+  .ant-row:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .tracker:not(:last-child) {
+    margin-bottom: 30px;
+  }
+
+  .ant-statistic-title {
+    font-weight: 500;
+  }
+}

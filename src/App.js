@@ -1,23 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import { Col, Row } from 'antd';
+
+import Tracker from './Tracker';
+import './styles.scss';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div id="wrapper">
+      <div id="header-wrapper"/>
+      <div id="content-wrapper">
+        <div className="container">
+          <Row>
+            <Col span={24}>
+              <Tracker name="Bitcoin" id="bitcoin"/>
+              <Tracker name="Ether" id="ethereum"/>
+            </Col>
+          </Row>
+        </div>
+      </div>
     </div>
   );
 }
